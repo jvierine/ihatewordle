@@ -36,3 +36,5 @@ If we have two rows of wordle filled in, we can search for an optimal word to us
 
 
 There . means unknown letter, capitalized character means green letter, and lower case character means yellow letter. Letters not in word are specified with the -n option. The wordle hints are separated using a comma. 
+
+Note that the dictionary has more words than NY Times uses, some of them nonsensical. One should manually check the words and pick ones that are sane wordle words. 
