@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 class wordle_words:
     def __init__(self):
         self.wordle_words=[]
-        for l in open("words_alpha.txt","r").readlines():
+        for l in open("wordle.txt","r").readlines():
             l=l.strip()
             if len(l)==5:
                 if "-" in l:
@@ -15,6 +15,8 @@ class wordle_words:
                 else:
                     a=n.array(list(l.lower()),dtype="str")
                     self.wordle_words.append(a)
+  #                  fo.write("%s\n"%(l.lower()))
+ #       fo.close()
         print("Number of words in dictionary %d"%(len(self.wordle_words)))
         self.wordle_words=n.array(self.wordle_words)
         self.n_words=self.wordle_words.shape[0]
