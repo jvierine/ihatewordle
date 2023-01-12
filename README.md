@@ -1,3 +1,7 @@
+Computer programs solve many of the problems we face as a society. I wrote this python script to help me with my wordle addiction. This script saves me tens of minutes of time every day and gives me a better wordle score. 
+
+Is it cheating? Of course it is.
+
 Example usage:
 
 If we have two rows of wordle filled in, we can search for an optimal word to use with the following command:
