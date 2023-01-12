@@ -8,7 +8,7 @@ Example usage:
 
 If we have two rows of wordle filled in, we can search for an optimal word to use with the following command:
 
->python3 wordle.py -c \"....E,lA..E,.A.lE\" -n risnctb"
+>python3 wordle.py -c \"....E,lA..E,.A.lE\" -n risnctb"<br />
 >
 >Number of words in dictionary 15920
 >wordle hints: ....E,lA..E,.A.lE
