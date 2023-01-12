@@ -15,8 +15,7 @@ class wordle_words:
                 else:
                     a=n.array(list(l.lower()),dtype="str")
                     self.wordle_words.append(a)
-  #                  fo.write("%s\n"%(l.lower()))
- #       fo.close()
+
         print("Number of words in dictionary %d"%(len(self.wordle_words)))
         self.wordle_words=n.array(self.wordle_words)
         self.n_words=self.wordle_words.shape[0]
@@ -88,7 +87,7 @@ class wordle_words:
 
     def find_most_common_matched(self,idx=[]):
         """ 
-        figure out what word is best using K-L divergence
+        figure out what word is best using K-L divergence 
         """
         if len(idx) == 0:
             idx=n.arange(self.wordle_words.shape[0],dtype=int)

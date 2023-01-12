@@ -10051,7 +10051,6 @@ orcin
 order
 ordos
 oread
-oreas
 orgal
 organ
 orgia
@@ -10089,7 +10088,6 @@ osaka
 oscan
 oscar
 oscin
-osela
 oshac
 oshea
 oside
@@ -12320,7 +12318,6 @@ senti
 sents
 senvy
 senza
-seora
 seoul
 sepad
 sepal
@@ -12336,7 +12333,6 @@ sequa
 seqwl
 serab
 serac
-serai
 seral
 serau
 seraw
