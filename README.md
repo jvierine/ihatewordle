@@ -37,4 +37,9 @@ If we have two rows of wordle filled in, we can search for an optimal word to us
 
 There . means unknown letter, capitalized character means green letter, and lower case character means yellow letter. Letters not in word are specified with the -n option. The wordle hints are separated using a comma. 
 
-Note that the dictionary has more words than NY Times uses, some of them nonsensical. One should manually check the words and pick ones that are sane wordle words. 
+The dictionary can be specified by the user, but I am using a dictionary (words_left.txt) that I got from the Wordle javascript source code (with past words removed). 
+
+There are also two other dictionaries that have more words than NY Times
+uses, some of them nonsensical. This is in case you want to play some
+of the Wordle clones out there. One should manually check the words
+and pick ones that are sane wordle words. These are in wordle.txt and linux_dict.txt.

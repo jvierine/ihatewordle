@@ -86,6 +86,8 @@ class wordle_words:
         return(word_idx[gidx])
 
     def word_histogram(self):
+        # do some character frequency calculations. not used for
+        # ranking, just out of curiousity
         alpha="abcdefghijklmnopqrstuvwxyz"
         alpha=n.array(list(alpha))
         counts=[]
@@ -98,17 +100,6 @@ class wordle_words:
         for i in range(len(idx)):
             print("%s %d"%(alpha[idx[i]],counts[idx[i]]))
             
-        # find two words that cover
-        # aesor iltnu 
-        # 
-        # arose
-        # until
-        #
-        # shire
-        # tonal
-        # 
-
-
     def find_most_common_matched(self,idx=[]):
         """ 
         figure out what word is best using K-L divergence 
@@ -145,8 +136,6 @@ class wordle_words:
             print("%s%s%s%s%s %d"%(words[i,0],words[i,1],words[i,2],words[i,3],words[i,4],common_counts[i]))
         
 
-w=wordle_words()
-w.word_histogram()
 
 parser = argparse.ArgumentParser(
 prog = 'ProgramName',
@@ -155,12 +144,17 @@ prog = 'ProgramName',
 
 parser.add_argument('-c', '--wordle_hints', default="", action='store')      # wordle lines
 parser.add_argument('-n', '--not_in_word', default="", action='store')
+parser.add_argument('-w', '--wordle_file', default="words_left.txt", action='store')
 
 #The ArgumentParser.parse_args() method runs the parser and places the extracted data in a argparse.Namespace object:
 
 args = parser.parse_args()
 print("wordle hints: %s"%(args.wordle_hints))
 print("characters not in word %s"%(args.not_in_word))
+
+w=wordle_words(fname=args.wordle_file)
+w.word_histogram()
+
 
 #["---tE","C----"])
 gidx=w.filter(wordle_hints=args.wordle_hints.split(","),
