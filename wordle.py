@@ -5,9 +5,10 @@ import argparse
 import matplotlib.pyplot as plt
 
 class wordle_words:
-    def __init__(self):
+    def __init__(self,fname="words_left.txt"):
         self.wordle_words=[]
-        for l in open("wordle.txt","r").readlines():
+        for l in open(fname,"r").readlines():
+#        for l in open("wordle.txt","r").readlines():            
             l=l.strip()
             if len(l)==5:
                 if "-" in l:
@@ -85,6 +86,30 @@ class wordle_words:
                 
         return(word_idx[gidx])
 
+    def word_histogram(self):
+        alpha="abcdefghijklmnopqrstuvwxyz"
+        alpha=n.array(list(alpha))
+        counts=[]
+        for a in alpha:
+            count=n.sum(self.wordle_words == a)
+#            print("%s %d"%(a,count))
+            counts.append(count)
+        counts=n.array(counts)
+        idx=n.argsort(counts)[::-1]
+        for i in range(len(idx)):
+            print("%s %d"%(alpha[idx[i]],counts[idx[i]]))
+            
+        # find two words that cover
+        # aesor iltnu 
+        # 
+        # arose
+        # until
+        #
+        # shire
+        # tonal
+        # 
+
+
     def find_most_common_matched(self,idx=[]):
         """ 
         figure out what word is best using K-L divergence 
@@ -103,6 +128,7 @@ class wordle_words:
             # find out how many words share characters with this one
             word0=words[i,:]
 
+            # optimize for total character count in remaining words
             n_common_chars=0
             word00=n.unique(word0)
             for ci in range(len(word00)):
@@ -121,6 +147,7 @@ class wordle_words:
         
 
 w=wordle_words()
+w.word_histogram()
 
 parser = argparse.ArgumentParser(
 prog = 'ProgramName',
