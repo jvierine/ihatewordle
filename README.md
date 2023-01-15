@@ -2,7 +2,7 @@
 
 Computer programs solve many of the problems we face as a society. I wrote this python script to help me with my wordle addiction. This script saves me tens of minutes of time every day and gives me a better wordle score. 
 
-Is it cheating? Of course it is.
+Is it cheating? Of course it is. At least I am not generating the words with the same random seed and random number generator as the wordle javascript program, which contains the dictionary of valid wordle words, and presumably the details needed to correctly guess the wordle word on your first try every day.
 
 Example usage:
 

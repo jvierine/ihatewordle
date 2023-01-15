@@ -8,7 +8,6 @@ class wordle_words:
     def __init__(self,fname="words_left.txt"):
         self.wordle_words=[]
         for l in open(fname,"r").readlines():
-#        for l in open("wordle.txt","r").readlines():            
             l=l.strip()
             if len(l)==5:
                 if "-" in l:
