@@ -316,7 +316,6 @@ coral
 corer
 couch
 cough
-count
 coupe
 court
 coven
@@ -480,7 +479,6 @@ elegy
 elfin
 elide
 elite
-elude
 email
 embed
 ember
@@ -868,7 +866,6 @@ madly
 mafia
 magic
 magma
-maize
 maker
 mambo
 mamma
@@ -882,7 +879,6 @@ manic
 march
 mason
 match
-matey
 mauve
 maybe
 mayor
