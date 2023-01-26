@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+# (c) Juha Vierinen
 import numpy as n
 import argparse
 import matplotlib.pyplot as plt
