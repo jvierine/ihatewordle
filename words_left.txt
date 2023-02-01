@@ -326,7 +326,6 @@ crack
 craft
 crane
 crash
-crave
 crawl
 cream
 credo
@@ -548,7 +547,6 @@ filmy
 filth
 final
 finch
-fishy
 fizzy
 flack
 flail
@@ -1231,7 +1229,6 @@ scene
 scent
 scion
 scoff
-scold
 scone
 scoop
 scope
